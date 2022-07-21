@@ -2,7 +2,7 @@
 
 body {
   background-color: black;
-  color:rgb(0, 0, 0);
+  color:black;
 }
 
 .profile-img {
@@ -15,4 +15,9 @@ img{
   display:flex;
   justify-content: center;
   align-items: center;
+}
+.profile-button {
+  background-color: rgb(15, 177, 172);
+  margin: 30px;
+  border-radius: 20%;
 }

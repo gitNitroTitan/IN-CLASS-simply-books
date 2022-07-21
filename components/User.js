@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import PropTypes from 'prop-types';
+import { PropTypes } from 'prop-types';
 
 export default function User({
   name, email, image, lastLogin,
@@ -10,7 +10,16 @@ export default function User({
       <div>User</div>
       <div>Name: {name}</div>
       <div>Email: {email}</div>
-      <div>Image: <img src={image} alt={name} /></div>
+      <div>Image: <img
+        src={image}
+        alt={name}
+        style={{
+          margin: '10px auto ',
+          width: '85%',
+          height: '60%',
+        }}
+      />
+      </div>
       <div>LastLogin: {lastLogin}</div>
     </>
   );
