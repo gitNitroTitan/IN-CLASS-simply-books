@@ -3,12 +3,12 @@ import User from '../components/User';
 import { useAuth } from '../utils/context/authContext';
 import { signOut } from '../utils/auth';
 
-export default function Profile() {
+function Profile() {
   const { user } = useAuth();
   return (
     <div>
       <User
-        name={user.displayName}
+        name={user.name}
         email={user.email}
         image={user.photoUrl}
         lastLogin={user.metadata.lastSignInTime}
@@ -17,3 +17,5 @@ export default function Profile() {
     </div>
   );
 }
+
+export default Profile;
