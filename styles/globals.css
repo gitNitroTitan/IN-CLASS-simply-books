@@ -1,8 +1,10 @@
 @import 'bootstrap/dist/css/bootstrap.css';
 
 body {
-  background-color: black;
+  background-image: url(https://st3.depositphotos.com/7636160/17630/i/450/depositphotos_176303076-stock-photo-black-brick-wall-background.jpg);
   color:black;
+  background-size: cover;
+  height: 100%;
 }
 
 .profile-img {
@@ -20,4 +22,7 @@ img{
   background-color: rgb(15, 177, 172);
   margin: 30px;
   border-radius: 20%;
+}
+.card-text{
+  font-style: bold !important;
 }
