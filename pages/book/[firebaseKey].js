@@ -18,7 +18,13 @@ export default function ViewBook() {
   return (
     <div className="mt-5 d-flex flex-wrap">
       <div className="d-flex flex-column">
-        <img src={bookDetails.image} alt={bookDetails.title} style={{ width: '300px' }} />
+        <img
+          src={bookDetails.image}
+          alt={bookDetails.title}
+          style={{
+            width: '90%', height: '110%', textAlign: 'center', margin: '20px auto ', borderRadius: '2%',
+          }}
+        />
       </div>
       <div className="text-white ms-5 details">
         <h5>
